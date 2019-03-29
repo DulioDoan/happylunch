@@ -3,24 +3,15 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    android:background="@drawable/background"
     android:id="@+id/layout_home"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity"
+
     >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="10dp"
-        android:text="New item"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
 
     <ImageView
         android:id="@+id/img_logobk"
@@ -37,17 +28,17 @@
         android:id="@+id/img_logocse"
         android:layout_width="60dp"
         android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toEndOf="@+id/img_logobk"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logocse" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_logohappylunch2"
         android:layout_width="172dp"
-        android:layout_height="140dp"
+        android:layout_height="121dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
@@ -56,76 +47,33 @@
         app:srcCompat="@drawable/logohappylunch2" />
 
     <EditText
-        android:id="@+id/editText_taiKiem"
-        android:layout_width="0dp"
+        android:id="@+id/editText_timKiem"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
-        android:drawableRight="@drawable/kinhlup"
         android:ems="10"
         android:hint="Tìm kiếm"
-        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/img_logohappylunch2" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="16dp"
+        android:id="@+id/btn_timKiem"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
         android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginBottom="16dp"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:srcCompat="@drawable/anhthe" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="16dp"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:srcCompat="@drawable/store" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/setting" />
+        app:layout_constraintStart_toEndOf="@+id/editText_timKiem"
+        app:layout_constraintTop_toBottomOf="@+id/img_logohappylunch2"
+        app:srcCompat="@drawable/ic_kinhlup" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_topView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -134,79 +82,143 @@
         android:text="Top View"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_taiKiem" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_timKiem" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/ck_salad_caron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
         android:background="@null"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/salad_caron" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_topView"
+        app:srcCompat="@drawable/ck_salad_caron" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/ck_trung_cut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:background="@null"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/trung_cut" />
+        app:layout_constraintStart_toEndOf="@+id/ck_salad_caron"
+        app:layout_constraintTop_toBottomOf="@+id/textView_topView"
+        app:srcCompat="@drawable/ck_trung_cut" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
+        android:id="@+id/ck_single_banana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:background="@null"
-        app:layout_constraintStart_toEndOf="@+id/imageButton11"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/single_banana" />
+        app:layout_constraintStart_toEndOf="@+id/ck_trung_cut"
+        app:layout_constraintTop_toBottomOf="@+id/textView_topView"
+        app:srcCompat="@drawable/ck_single_banana" />
 
-    <ImageButton
-        android:id="@+id/imageButton14"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="124dp"
+        android:text="New item"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_topView" />
+
+    <ImageButton
+        android:id="@+id/ck_fruit_whole_nodish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="8dp"
         android:background="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/fruit_whole_nodish" />
+        app:srcCompat="@drawable/ck_fruit_whole_nodish" />
 
     <ImageButton
-        android:id="@+id/imageButton15"
+        android:id="@+id/ck_banh_bao_xa_xiu_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:background="@null"
-        app:layout_constraintStart_toEndOf="@+id/imageButton14"
+        app:layout_constraintStart_toEndOf="@+id/ck_fruit_whole_nodish"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/banh_bao_xa_xiu_2" />
+        app:srcCompat="@drawable/ck_banh_bao_xa_xiu_2" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/ck_com_chien"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:background="@null"
-        app:layout_constraintStart_toEndOf="@+id/imageButton15"
+        app:layout_constraintStart_toEndOf="@+id/ck_banh_bao_xa_xiu_2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/com_chien" />
+        app:srcCompat="@drawable/ck_com_chien" />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/btn_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:srcCompat="@drawable/ic_anhthe" />
+
+    <ImageButton
+        android:id="@+id/btn_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_setting"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/btn_personal"
+        app:srcCompat="@drawable/ic_store" />
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_setting" />
 
 
 </android.support.constraint.ConstraintLayout>
